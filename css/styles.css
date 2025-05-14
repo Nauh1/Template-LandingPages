@@ -3107,8 +3107,8 @@ input::-moz-focus-inner {
  * ## header logo
  * ------------------------------------------------------------------- */
 .s-header__logo {
-    --logo-width: 106px;
-    --logo-height: 20px;
+    --logo-width: 45px;
+    --logo-height: 45px;
     height: var(--header-height);
     width: var(--logo-width);
     margin-right: 4rem;
@@ -4011,6 +4011,22 @@ body.search-is-visible {
     color: white;
 }
 
+.folio-item {
+    flex: 1 1 300px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.folio-item img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * portfolio
@@ -4086,153 +4102,6 @@ body.search-is-visible {
     }
 }
 
-
-
-/* ===================================================================
- * # blog
- *
- * ------------------------------------------------------------------- */
-.s-blog {
-    background-color: var(--color-1-dark);
-    padding-top: calc(7 * var(--space));
-    padding-bottom: calc(6 * var(--space));
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.s-blog .section-head .desc {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.s-blog .section-head .lead {
-    color: white;
-}
-
-.s-blog a {
-    color: white;
-}
-
-.s-blog a:hover, .s-blog a:focus {
-    color: var(--color-dark-bg);
-}
-
-/* ------------------------------------------------------------------- 
- * ## homepage blog entries section 
- * ------------------------------------------------------------------- */
-.blog-entries h3 {
-    color: white;
-    margin-top: 0;
-}
-
-.blog-entry {
-    margin-bottom: var(--vspace-0_25);
-}
-
-.blog-entry__header {
-    position: relative;
-}
-
-.blog-entry__avatar {
-    position: absolute;
-    top: var(--vspace-0_25);
-    left: var(--gutter-lg);
-}
-
-.blog-entry__avatar img {
-    width: var(--vspace-2);
-    height: var(--vspace-2);
-    border-radius: 50%;
-}
-
-.blog-entry__title, .blog-entry__content {
-    padding-left: 12.8rem;
-}
-
-.blog-entry__meta {
-    font-size: calc(var(--text-size) * 0.9444);
-    line-height: var(--vspace-0_75);
-    margin-top: var(--vspace-0_25);
-}
-
-.blog-entry__date {
-    display: block;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    color: white;
-    margin-top: var(--vspace-0_25);
-    margin-bottom: .4rem;
-}
-
-.blog-entry__byline {
-    display: block;
-    line-height: calc(0.75 * var(--space));
-}
-
-.blog-entry .more-link {
-    font-size: .9em;
-    font-weight: 600;
-    margin-left: .2rem;
-}
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * blog
- * ------------------------------------------------------------------- */
-@media screen and (max-width: 1200px) {
-    .s-blog {
-        padding-top: var(--vspace-5);
-        padding-bottom: var(--vspace-4);
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .blog-entry__meta {
-        padding-left: 12.8rem;
-        margin-top: calc(var(--vspace-0_25) * -1);
-        margin-bottom: var(--vspace-1);
-    }
-    .blog-entry__date, .blog-entry__byline {
-        display: inline-block;
-    }
-    .blog-entry__date {
-        margin-right: .8rem;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .blog-entry__avatar img {
-        width: var(--vspace-1_5);
-        height: var(--vspace-1_5);
-    }
-    .blog-entry__title, .blog-entry__content, .blog-entry__meta {
-        padding-left: 9.2rem;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .blog-entry__title h3 {
-        font-size: var(--text-xl);
-        line-height: var(--vspace-1_25);
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .blog-entry__avatar {
-        left: 7vw;
-    }
-    .blog-entry__title, .blog-entry__content, .blog-entry__meta {
-        padding-left: 6.8rem;
-    }
-}
-
-@media screen and (max-width: 460px) {
-    .blog-entry__avatar {
-        display: none;
-    }
-    .blog-entry__title, .blog-entry__content, .blog-entry__meta {
-        padding-left: var(--gutter-mob);
-    }
-}
 
 
 
